@@ -13,3 +13,24 @@
 6、public存储静态文件
 
 7、node_nodules是npm生成的包，包含多个文件
+
+
+
+
+关于node_nodules
+
+终端自动生成的一个包，包含非常多文件，主要用于配置环境
+
+npm init -y   //自动生成package.json文件，包含这个环境由什么组成
+
+npm install --save bootstrap@3.3.7   //下载bootstrap3.3.7版本
+
+npm install --save body-parse
+
+npm install --save express
+
+npm install --save express-art-template  //这个包依赖express，必须有express
+
+下载包一定要加--save 这样才会在package.json中生成下载包信息，否则后期不知道下载了哪些包
+
+以上下载包信息，都可以在package.json中查看
